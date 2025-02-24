@@ -199,3 +199,86 @@ body {
 .kissat-item a:hover {
     text-decoration: underline;
 }
+
+.banner-card {
+    background-color: #f1f0e8;
+}
+
+.banner-card p{
+    margin: 0%;
+}
+
+.firstContainer {
+        display: flex; /* Asettaa sisällöt riviin */
+        gap: 35px; /* Lisää väliä elementtien väliin */
+}
+
+.secondContainer {
+    display: flex;
+    gap: 30px; /* Lisää väliä elementtien väliin */
+}
+
+.box {
+    background-color: #e5e1da;
+    border-radius: 15px;
+    margin-left: 60px;
+    padding: 10px; /* Lisää vähän sisätilaa */
+    padding-right: 200px;
+    display: flex; /* Keskittää sisällön */
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+    width: 300px; /* Määrittele haluttu leveys */
+    height: 300px; /* Määrittele haluttu korkeus */
+    overflow: hidden; /* Estää kuvan ylityksen */
+}
+
+.box img {
+    max-width: 100%; /* Rajoittaa kuvan leveyden laatikon sisään */
+    max-height: 100%; /* Rajoittaa kuvan korkeuden laatikon sisään */
+    object-fit: contain; /* Säilyttää kuvasuhteen ja sovittaa sen laatikkoon */
+}
+
+.box2 {
+    background-color: #e5e1da;
+    border-radius: 15px;
+    margin-left: 60px;
+    padding: 10px; /* Lisää vähän sisätilaa */
+    display: flex; /* Keskittää sisällön */
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+    width: 300px; /* Määrittele haluttu leveys */
+    height: 200px; /* Määrittele haluttu korkeus */
+    overflow: hidden; /* Estää kuvan ylityksen */
+}
+
+.box2 img {
+    max-width: 100%; /* Rajoittaa kuvan leveyden laatikon sisään */
+    max-height: 100%; /* Rajoittaa kuvan korkeuden laatikon sisään */
+    object-fit: contain; /* Säilyttää kuvasuhteen ja sovittaa sen laatikkoon */
+}
+
+.footer{
+    background-color: #89A8B2; 
+   display: flex;
+}
+
+.text{
+    
+}
+
+.gategory{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.firstInfoText{
+    display: flex;
+    gap: 50px;
+}
+
+.secondInfoText{
+    display: flex;
+    gap: 50px;
+}
+
