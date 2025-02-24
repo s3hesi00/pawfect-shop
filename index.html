@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="kuvat/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="nav-right">
+            <a href="#" class="wishlist">
+                <img src="kuvat/heart.png" alt="Toivelista Ikoni">
+                Toivelista
+            </a>
+            <a href="#" class="cart">
+                <img src="kuvat/cart.png" alt="Ostoskori Ikoni">
+                Ostoskori
+            </a>
+            <div class="search-bar">
+                <img src="kuvat/search.png" alt="Search Ikoni">
+                <input type="text" placeholder="Hae tuotevalikoimasta">
+            </div>
+        </div>
+    </nav>
+    <nav class="secondary-nav">
+        <a href="index.html#products">Tuotteet</a>
+        <a href="kissat.html">Kissat</a>
+        <a href="koirat.html">Koirat</a>
+        <a href="pienelaimet.html">Pieneläimet</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-left">
+            <img src="kuvat/dog+cat.png" alt="Kissa ja koira">
+        </div>
+        <div class="hero-right">
+            <h1>ILMAINEN TOIMITUS</h1>
+            <p>ensimmäisestä tilauksestasi</p>
+            <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'});">Ostoksille!</button>
+        </div>
+    </section>
+    
+    <section id="products">
+        <h2>Tuotteet</h2>
+        <!-- Tuotteiden sisältö tänne -->
+    </section>
+</body>
+</html>
