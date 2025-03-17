@@ -1,10 +1,14 @@
 /* general styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F1F0E8;
+html {
     scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F0E8;
+    scroll-behavior: smooth;
+  }  
 
 .navbar {
     display: flex;
@@ -60,6 +64,7 @@ body {
     border: none;
     background: none;
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .secondary-nav {
@@ -77,6 +82,7 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+    z-index: 10; /* Ensure links are clickable */
 }
 
 /* home */
@@ -85,11 +91,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #89A8B2;
     height: 80vh;
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
+}
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2; /* Puts the image behind the content */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1; /* Keeps the overlay behind the content */
 }
 
 .hero-left img {
@@ -102,7 +135,6 @@ body {
 .hero-right {
     margin-left: 40px;
     margin-bottom: 80px;
-
 }
 
 .hero-right h1 {
@@ -130,7 +162,9 @@ body {
 }
 
 .hero-right button:hover {
-    background-color: #ddd;
+    background-color: #89A8B2;
+    color: white;
+    ;
 }
 
 #products {
@@ -138,27 +172,164 @@ body {
 
 }
 
-/*kissat*/
+.banner-card {
+    background-color: #f1f0e8;
+}
+ 
+.banner-card h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+ 
+.firstContainer {
+        display: flex; /* Asettaa sisällöt riviin */
+        gap: 35px; /* Lisää väliä elementtien väliin */
+}
+ 
+.box-row{
+    margin-left: 14%;
+}
+ 
+.dot {
+    height: 140px;
+    width: 140px;
+    background-color: #B3C8CF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px; /* Säädä tarpeen mukaan */
+    color: black; /* Vaihda haluamaksesi */
+    font-weight: bold;
+}
+ 
+.secondContainer {
+    display: flex;
+    gap: 30px; /* Lisää väliä elementtien väliin */
+}
+ 
+.box {
+    background-color: #e5e1da;
+    border-radius: 15px;
+    margin-left: 60px;
+    padding: 10px; /* Lisää vähän sisätilaa */
+    padding-right: 200px;
+    display: flex; /* Keskittää sisällön */
+   
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+    width: 300px; /* Määrittele haluttu leveys */
+    height: 300px; /* Määrittele haluttu korkeus */
+    overflow: hidden; /* Estää kuvan ylityksen */
+}
+ 
+.hs-row{
+    margin-top: 80%;
+}
+ 
+.hs-row img{
+    width: 20px;
+    height: 20px;
+}
+ 
+.hs-row button{
+  border-radius: 15px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 6%;
+  border: 1px solid gray;
+}
+ 
+.box img {
+    max-width: 100%; /* Rajoittaa kuvan leveyden laatikon sisään */
+    max-height: 100%; /* Rajoittaa kuvan korkeuden laatikon sisään */
+    object-fit: contain; /* Säilyttää kuvasuhteen ja sovittaa sen laatikkoon */
+}
+ 
+.box2 {
+    background-color: #e5e1da;
+    border-radius: 15px;
+    margin-left: 60px;
+    padding: 10px; /* Lisää vähän sisätilaa */
+    display: flex; /* Keskittää sisällön */
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+    width: 300px; /* Määrittele haluttu leveys */
+    height: 200px; /* Määrittele haluttu korkeus */
+    overflow: hidden; /* Estää kuvan ylityksen */
+}
+ 
+.box2 img {
+    max-width: 100%; /* Rajoittaa kuvan leveyden laatikon sisään */
+    max-height: 100%; /* Rajoittaa kuvan korkeuden laatikon sisään */
+    object-fit: contain; /* Säilyttää kuvasuhteen ja sovittaa sen laatikkoon */
+}
 
+.gategory{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.firstInfoText{
+    display: flex;
+    gap: 50px;
+}
+
+.secondInfoText{
+    display: flex;
+    gap: 50px;
+}
+
+/*kissat*/
 .hero-kissat {
-    height: 50vh;
+    height: 55vh; /* Adjust this value based on how much space you want */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #89A8B2;
+    position: relative; /* To allow absolute positioning for the image */
     padding: 20px;
 }
 
+.hero-kissat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+
+.hero-kissat .hero-image {
+    position: absolute; /* Position it behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the image stretches across the full width */
+    height: 100%; /* Adjust height to cover the section */
+    object-fit: cover; /* Ensures the image covers the entire section without stretching */
+    z-index: -2; /* Keeps the image behind the overlay */
+}
+
+
 .hero-kissat h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    color: white;
 }
 
 .kissat-container {
     display: flex;
-    gap: 40px;
+    gap: 100px;
+    align-items: center;
 }
 
 .kissat-item {
@@ -180,9 +351,16 @@ body {
     position: absolute;
 }
 
+.kissat-image img:first-child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .kissat-image .overlay-image {
     width: 90%;
-    left: 100%;
+    left: 50%; /* changed from 100% to 50% */
     top: 40%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -192,10 +370,432 @@ body {
     margin-top: 20px;
     font-size: 1.2em;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-right: 0px;
 }
 
 .kissat-item a:hover {
-    text-decoration: underline;
+    color: #b3c8cf;
+}
+
+/* Center the main heading */
+.cats-products h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  /* Left align the category header */
+  .product-category h3 {
+    text-align: left;
+    margin-left: 8%; /* adjust if needed */
+    font-size: 1.5em;
+  }
+  
+  /* Container for all products */
+  .product-list {
+    display: flex;
+    gap: 40px; /* space between products */
+    justify-content: center; /* centers the list within the container */
+    margin: 20px;
+  }
+  
+  /* Individual product container */
+  .product-item {
+    background-color: #E5E1DA;
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px; /* adjust width as needed */
+    margin-bottom: 30px;
+  }
+  
+  /* Box that holds the product image */
+  .product-box {
+    width: 100%;
+    height: 200px; /* adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .product-box img {
+    height: 85%;
+    object-fit: contain;
+  }
+  
+  /* Details below the image */
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Product info on the left */
+  .product-info {
+    text-align: left;
+  }
+  
+  /* Ensure product name is bold */
+  .product-name {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .product-price,
+  .product-availability {
+    margin: 0;
+    font-weight: lighter;
+  }
+  
+  /* Button container with vertical stacking */
+  .product-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Style for buttons */
+/* Style for buttons as horizontal rectangles */
+.product-buttons button {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 60px;    /* fixed width for a rectangle shape */
+    height: 35px;    /* fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  
+  /* Optional: Adjust the size of the icons in the buttons */
+  .product-buttons button img {
+    width: 20px;
+    height: auto;
+  }
+  
+  .hero-koirat {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-koirat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+
+.hero-koirat .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-koirat h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.koirat-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.koirat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.koirat-image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.koirat-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.koirat-image img:first-child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.koirat-image .overlay-image {
+    width: 90%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.koirat-item a {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.koirat-item a:hover {
+    color: #b3c8cf;
+}
+
+/* Center the main heading */
+.koirat-products h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* Left align the category header */
+.product-category h3 {
+    text-align: left;
+    margin-left: 8%;
+    font-size: 1.5em;
+}
+
+/* Container for all products */
+.product-list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Individual product container */
+.product-item {
+    background-color: #E5E1DA;
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Box that holds the product image */
+.product-box {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-box img {
+    height: 85%;
+    object-fit: contain;
+}
+
+/* Details below the image */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Product info on the left */
+.product-info {
+    text-align: left;
+}
+
+/* Ensure product name is bold */
+.product-name {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.product-price,
+.product-availability {
+    margin: 0;
+    font-weight: lighter;
+}
+
+/* Button container with vertical stacking */
+.product-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style for buttons */
+.product-buttons button {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 60px;    /* fixed width for a rectangle shape */
+    height: 35px;    /* fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Optional: Adjust the size of the icons in the buttons */
+.product-buttons button img {
+    width: 20px;
+    height: auto;
+}
+
+/*Pieneläimet*/
+
+.hero-pienelaimet {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-pienelaimet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+
+.hero-pienelaimet .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-pienelaimet h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.pienelaimet-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.pienelaimet-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pienelaimet-image {
+    position: relative;
+    width: 100px; /* Adjust as needed */
+    height: 100px;
+}
+
+.pienelaimet-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.pienelaimet-image img:first-child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pienelaimet-image .overlay-image {
+    width: 90%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.pienelaimet-item a {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.pienelaimet-item a:hover {
+    color: #b3c8cf;
+}
+
+/* products */
+.pienelaimet-products h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #89A8B2;
+    display: flex;
+    align-items: flex-start; /* Kohdistaa logon ja tekstin yläreunaan */
+    gap: 30px; /* Väli logon ja tekstiosan välillä */
+    padding: 20px;
+    margin-top: 2%;
+}
+ 
+.footer img {
+    width: 200px; /* Säädä logon kokoa tarvittaessa */
+    filter: invert();
+}
+ 
+.text {
+    display: flex;
+    flex-direction: row; /* Asettaa info-osat vierekkäin */
+    gap: 150px; /* Lisää tilaa info-osioiden väliin */
+    margin-left: 8%;
+}
+ 
+.info p{
+    color: white;
+}
+ 
+.info h2{
+    color: white;
 }
