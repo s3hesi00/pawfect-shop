@@ -199,6 +199,7 @@ body {
 .kissat-item a:hover {
     text-decoration: underline;
 }
+<<<<<<< HEAD
 
 .banner-card {
     background-color: #f1f0e8;
@@ -282,3 +283,5 @@ body {
     gap: 50px;
 }
 
+=======
+>>>>>>> e0b2ec83fcbb336457dcfd725b6abcc4b19ab535
