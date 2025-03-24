@@ -798,7 +798,7 @@ body {
  
 .info h2{
     color: white;
-}<<<<<<< HEAD
+}
 
 .banner-card {
     background-color: #f1f0e8;
@@ -862,10 +862,6 @@ body {
    display: flex;
 }
 
-.text{
-    
-}
-
 .gategory{
     display: flex;
     gap: 50px;
@@ -881,6 +877,3 @@ body {
     display: flex;
     gap: 50px;
 }
-
-=======
->>>>>>> e0b2ec83fcbb336457dcfd725b6abcc4b19ab535
