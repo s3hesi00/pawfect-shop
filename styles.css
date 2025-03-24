@@ -689,8 +689,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: -1; /* Keeps the overlay behind the content */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
 }
 
 .hero-pienelaimet .hero-image {
