@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
+    <title>Koirat</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -27,11 +28,350 @@
         </div>
     </nav>
     <nav class="secondary-nav">
-        <a href="index.html#products">Tuotteet</a>
-        <a href="kissat.html">Kissat</a>
-        <a href="koirat.html">Koirat</a>
-        <a href="pienelaimet.html">Pieneläimet</a>
-    </nav>
+      <a href="index.html#products">Tuotteet</a>
+      <a href="kissat.html">Kissat</a>
+      <a href="koirat.html">Koirat</a>
+      <a href="pienelaimet.html">Pieneläimet</a>
+  </nav>
     
+    <section class="hero-koirat">
+      <img src="kuvat/koirat.jpg" alt="Koiranruoka" class="hero-image">
+      <h1>Koirat</h1>
+      <div class="koirat-container">
+            <div class="koirat-item">
+                <div class="koirat-image">
+                    <img src="kuvat/sininentassu.png" alt="Tassu">
+                    <img src="kuvat/dogFood.png" alt="Koiranruoka" class="overlay-image">
+                </div>
+                <a href="#koiranruoka">Koiranruoka</a>
+            </div>
+            <div class="koirat-item">
+                <div class="koirat-image">
+                    <img src="kuvat/sininentassu.png" alt="Tassu">
+                    <img src="kuvat/leash.png" alt="Koiranhiekka" class="overlay-image">
+                </div>
+                <a href="#ulkoilu">Koiran ulkoilu</a>
+            </div>
+            <div class="koirat-item">
+                <div class="koirat-image">
+                    <img src="kuvat/sininentassu.png" alt="Tassu">
+                    <img src="kuvat/dogToys2.png" alt="Koiran lelut" class="overlay-image">
+                </div>
+                <a href="#koiran-lelut">Koiran lelut</a>
+            </div>
+            <div class="koirat-item">
+                <div class="koirat-image">
+                    <img src="kuvat/sininentassu.png" alt="Tassu">
+                    <img src="kuvat/dogBed2.png" alt="Muut tarvikkeet" class="overlay-image">
+                </div>
+                <a href="#muut-tarvikkeet">Muut tarvikkeet</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="koirat-products">
+        <h1>Kaikki tuotteet</h1>
+        <div class="product-category">
+          <section class="product-category" id="koiranruoka">
+          <h3>Koiranruoka</h3>
+          <div class="product-list">
+            <!-- Product Item 1 -->
+            <div class="product-item">
+              <div class="product-box">
+                <img src="kuvat/dogFood.png" alt="Tuote">
+              </div>
+              <div class="product-details">
+                <div class="product-info">
+                  <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                  <p class="product-price">hinta</p>
+                  <p class="product-availability">saatavuus</p>
+                </div>
+                <div class="product-buttons">
+                  <button class="cart-button">
+                    <img src="kuvat/cart.png" alt="Ostoskori">
+                  </button>
+                  <button class="like-button">
+                    <img src="kuvat/heart.png" alt="Toivelista">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Item 2 -->
+            <div class="product-item">
+              <div class="product-box">
+                <img src="kuvat/dogFood2.webp" alt="Tuote">
+              </div>
+              <div class="product-details">
+                <div class="product-info">
+                  <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                  <p class="product-price">hinta</p>
+                  <p class="product-availability">saatavuus</p>
+                </div>
+                <div class="product-buttons">
+                  <button class="cart-button">
+                    <img src="kuvat/cart.png" alt="Ostoskori">
+                  </button>
+                  <button class="like-button">
+                    <img src="kuvat/heart.png" alt="Toivelista">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Item 3 -->
+            <div class="product-item">
+              <div class="product-box">
+                <img src="kuvat/dogFood3.avif" alt="Tuote">
+              </div>
+              <div class="product-details">
+                <div class="product-info">
+                  <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                  <p class="product-price">hinta</p>
+                  <p class="product-availability">saatavuus</p>
+                </div>
+                <div class="product-buttons">
+                  <button class="cart-button">
+                    <img src="kuvat/cart.png" alt="Ostoskori">
+                  </button>
+                  <button class="like-button">
+                    <img src="kuvat/heart.png" alt="Toivelista">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <div class="product-category">
+          <section class="product-category" id="ulkoilu">
+            <h3>Koiran ulkoilu</h3>
+            <div class="product-list">
+              <!-- Product Item 1 -->
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/panta.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/valjaat.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogLeash.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- More product items -->
+            </div>
+          </section>
+        </div>
+
+        <!-- Koiran lelut section with ID -->
+        <div class="product-category">
+          <section class="product-category" id="koiran-lelut">
+            <h3>Koiran lelut</h3>
+            <div class="product-list">
+              <!-- Product Item 1 -->
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogToys.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogToys2.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogToys3.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- More product items -->
+            </div>
+          </section>
+        </div>
+
+        <!-- Muut tarvikkeet section with ID -->
+        <div class="product-category">
+          <section class="product-category" id="muut-tarvikkeet">
+            <h3>Muut tarvikkeet</h3>
+            <div class="product-list">
+              <!-- Product Item 1 -->
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogBed.webp" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogBed2.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/dogBed3.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- More product items -->
+            </div>
+          </section>
+        </div>
+
+      </section>     
+      <div class="footer" id="footer">
+        <img src="kuvat/logo.png" alt="logo">
+        <div class="text">
+             <div class="info">
+                 <h2>Asiakaspalvelu</h2>
+                 <p>info@pawfectshop.com</p>
+                 <p>+358 50 987 6543</p>
+             </div>
+             <div class="info">
+                 <h2>Myymälä</h2>
+                 <p>Karvakuja 12</p>
+                 <p>00500 Helsinki</p>
+             </div>
+             <div class="info">
+                 <h2>Avoinna</h2>
+                 <p>Ma-Pe 10-18</p>
+                 <p>La 10-16</p>
+              </div>
+        </div>
 </body>
 </html>
