@@ -800,8 +800,6 @@ body {
     color: white;
 }
 
-
-
 .modal {
     display: none;
     position: fixed;
@@ -811,18 +809,201 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 .modal-content {
-    background: white;
-    padding: 20px;
+    background-image: linear-gradient(to right, white 0%, white 50%, #E5E1DA 50%, #E5E1DA 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
     border-radius: 8px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    position: relative;
 }
+.modal-image {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: -100px; /* Kuva siirtyy enemmän vasemmalle */
+}
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 530px; /* tai sopiva korkeus, voit säätää */
+}
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 0; /* jos oli iso marginaali, ota pois */
+}
+.modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.modal-buttons img{
+    width: 20px;
+    height: auto;
+}
+
 .close {
     cursor: pointer;
-    color: red;
-    font-size: 20px;
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
+
+.cart-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1100;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.cart-notification h3, .cart-notification p{
+margin: 0%;
+}
+
+.cartNBanner{
+    background-color: #F1F0E8;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.CNImage img{
+background-color: white;
+padding: 20px;
+margin: 0%;
+display: flex;
+  flex-direction: row;
+}
+
+.cart-notification img{
+    width: 40px;
+    height: 40x;
+}
+
+.cart-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.cart-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.cart-buttons button {
+    padding: 10px;
+    border: none;
+    background-color: #89A8B2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart-buttons button:hover {
+    background-color: #B3C8CF;
+}
+.quantity-input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.availability-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F0E8;
+    padding: 8px 16px;
+    border-radius: 10px;
+    width: 200px; /* voit säätää leveyttä */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.availability-status {
+    color: black; /* voit vaihtaa väriä esim. oranssiksi jos ei varastossa */
+}
+
+.availability-amount {
+    color: #333;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+  .cart-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cart-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background: #E5E1DA;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .cart-container:hover .cart-popup {
+    display: block;
+  }
+
+  .cart-item {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+
+  .checkout-button {
+    display: block;
+    padding: 10px;
+    background-color: #89A8B2;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .checkout-button:hover {
+    background-color: #6397a8;
+  }
+
