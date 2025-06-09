@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="kuvat/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="nav-right">
+            <a href="#" class="wishlist">
+                <img src="kuvat/heart.png" alt="Toivelista Ikoni">
+                Toivelista
+            </a>
+            <div class="cart-container">
+              <a href="#" class="cart">
+                <img src="kuvat/cart.png" alt="Ostoskori Ikoni" style="vertical-align: middle; width: 24px;">
+                Ostoskori
+              </a>
+            
+              <div class="cart-popup">
+                <div class="cart-item">Tuote 1 – 12,90 €</div>
+                <div class="cart-item">Tuote 2 – 9,50 €</div>
+                <a href="kassa.html" class="checkout-button">Siirry kassalle</a>
+              </div>
+            </div>ss="search-bar">
+                <img src="kuvat/search.png" alt="Search Ikoni">
+                <input type="text" placeholder="Hae tuotevalikoimasta">
+            </div>
+        </div>
+    </nav>
+    <nav class="secondary-nav">
+        <a href="index.html#products">Tuotteet</a>
+        <a href="kissat.html">Kissat</a>
+        <a href="koirat.html">Koirat</a>
+        <a href="pienelaimet.html">Pieneläimet</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="kuvat/hero.jpg" alt="Hero Background" class="hero-image">
+        </div>
+        <div class="hero-left">
+            <img src="kuvat/dog+cat.png" alt="Kissa ja koira">
+        </div>
+        <div class="hero-right">
+            <h1>ILMAINEN TOIMITUS</h1>
+            <p>ensimmäisestä tilauksestasi</p>
+            <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'});">Ostoksille!</button>
+        </div>
+    </section>
+    
+    <section id="products">
+    <div class="banner-card">
+        <h2>Tarjoukset</h2>
+        <div class="firstContainer">
+            <div class="box">
+                <img src="kuvat/bowls.png" alt="tuote">
+                <div class="box-row">
+                    <div class="dot">
+                        -20%
+                    </div>
+                    <div class="hs-row">
+                        <button><img src="kuvat/heart.png" alt="kori"></button>
+                        <button><img src="kuvat/cart.png" alt="suosikki"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="kuvat/dreamies.png" alt="tuote">
+                <div class="box-row">
+                    <div class="dot">
+                        -20%
+                    </div>
+                    <div class="hs-row">
+                        <button><img src="kuvat/heart.png" alt="Ostoskori"></button>
+                        <button><img src="kuvat/cart.png" alt="Toivelista"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="product-category">
+            <section class="product-category" id="kissanruoka">
+                <h3>Suosituimmat tuotteet</h3>            
+                <div class="product-list">
+              <!-- Product Item 1 -->
+              <div class="product-item">
+                <div class="product-box">
+                  <img src="kuvat/primacat.png" alt="Tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product Item 2 -->
+              <div class="product-item">
+                <div class="product-box">
+                    <img src="kuvat/kastikemix.png" alt="tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product Item 3 -->
+              <div class="product-item">
+                <div class="product-box">
+                    <img src="kuvat/nutrima.png" alt="tuote">
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <p class="product-name"><strong>Tuotteen nimi</strong></p>
+                    <p class="product-price">hinta</p>
+                    <p class="product-availability">saatavuus</p>
+                  </div>
+                  <div class="product-buttons">
+                    <button class="cart-button">
+                      <img src="kuvat/cart.png" alt="Ostoskori">
+                    </button>
+                    <button class="like-button">
+                      <img src="kuvat/heart.png" alt="Toivelista">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    </div>
+</section>
+
+    <div class="footer" id="footer">
+        <img src="kuvat/logo.png" alt="logo">
+        <div class="text">
+             <div class="info">
+                 <h2>Asiakaspalvelu</h2>
+                 <p>info@pawfectshop.com</p>
+                 <p>+358 50 987 6543</p>
+             </div>
+             <div class="info">
+                 <h2>Myymälä</h2>
+                 <p>Karvakuja 12</p>
+                 <p>00500 Helsinki</p>
+             </div>
+             <div class="info">
+                 <h2>Avoinna</h2>
+                 <p>Ma-Pe 10-18</p>
+                 <p>La 10-16</p>
+              </div>
+        </div>
+     </div>
+
+</body>
+</html>

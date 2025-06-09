@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F0E8;
+    scroll-behavior: smooth;
+  }  
+
+.footer {
+    background-color: #89A8B2;
+    display: flex;
+    align-items: flex-start; /* Kohdistaa logon ja tekstin yläreunaan */
+    padding: 15px;
+    margin: 0%;
+}
+
+.footer img {
+    width: 130px; /* Säädä logon kokoa tarvittaessa */
+}
+
+.continueButton{
+border: none;
+background: none;
+margin-top: 2%;
+margin-bottom: 2%;
+margin-left: 2%;
+}
+
+.boxes{
+display: flex;
+flex-direction: row;
+flex: 1;
+}
+
+.box1{
+    background-color: #E5E1DA;
+    border-radius: 40px;
+    margin-left: 2%;
+    padding-left: 5%;
+    padding-right: 45%;
+}
+
+.box2{
+    background-color: #E5E1DA;
+    margin-left: 2%;
+    border-radius: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.priceBox{
+background-color: white;
+border-radius: 15px;
+padding-left: 30px;
+padding-right: 190px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.nameBox1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nimi, .email, .number{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.nameText, .emailText, .numberText{
+    margin-top: 15px;
+}
+
+.nameBox2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nameBox3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tilausButton{
+    border: none;
+    border-radius: 25px;
+    background-color: #89A8B2;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 35%;
+}
